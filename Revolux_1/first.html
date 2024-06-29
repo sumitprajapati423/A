@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolux</title>
+    <link rel="icon" href="./download.png " type="image/x-icon" >
+    <link rel="stylesheet" href="./first.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <style>
+    .card p:first-of-type::first-letter{color: red; font-size: 20px;}
+    .card p:first-of-type::first-line{color: blue; font-size: 14px;}
+
+        input[name="name"]:valid {border: 2px solid green;}
+        input[name="email"]:valid {border: 2px solid #12ec12;}
+        input[name="email"]:invalid {border: 2px solid red;}
+        input[type="password"]:required {border: 2px solid green;}
+        input[type="number"]:in-range {border: 4px solid darkorchid;}
+        input[type="checkbox"]:checked + p {color: blue;}
+
+
+  </style>
+    
+    
+</head>
+<body>
+
+<header>
+    <div class="container">
+         <div class="logo">
+            <h1>Logo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#">Languages &#11206; </a>
+                    <ul class="dropdown">
+                        <li><a href="#">html</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">javascript</a></li>
+                        <li><a href="#">php</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+   
+<!-- -------------Modal start--- -->
+    <div class="mod" id="contactForm">
+        <button id="openModal" style="margin-top: 10px;"  >Open Modal</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                <span class="close">&times;</span>
+                    <h2>Modal Window</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus corrupti dolor nostrum accusantium adipisci corporis neque quae animi rerum? Dolores?</p>
+                    <img src="./pexels-photo-8292851.webp" alt="" width="300px" height="230px">
+                </div>
+            </div>
+    </div>
+
+
+<!-- -------------Modal end--- -->
+
+<!-- ------Side Bar start----- -->
+    <main>
+        <div class="content">
+            <h2>Welcome to our website!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eos, et quae suscipit consequuntur adipisci rem aliquam, debitis numquam iure perspiciatis iste cumque error soluta.</p>
+        </div>
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore ipsam earum delectus deserunt obcaecati blanditiis! Cum possimus commodi laudantium distinctio perspiciatis porro temporibus tempora.
+            </p>
+        </div>
+    </main>
+<!-- -----Side Bar end -->
+
+<!-- image start -->
+   <div class="row">
+        <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr8SR9gsmezaqEWWMLWECR4D-1ZwUabyesSHIanCn6NA&s" alt="" width="100%" height="100%">
+        </div>
+        <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE2b1RsRxSMTKk5JrVQND0UgqIOavjgALNSVO6UZ9IHQ&s" alt="" width="100%" height="100%">
+        </div>
+        <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPbhooz_tbYpgBBK6Nv6RAoQQKtblR6WDrH8O81WWMZw&s" alt="" width="100%" height="100%">
+        </div>
+        
+   </div>
+   <!-- image end -->
+
+   <!------ card-layout start ----->
+    <div class="main">
+         <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2023/12/18/11/05/chocolate-8455786_1280.jpg" alt="Placeholder Image">
+            <div class="card-content">
+            <h2 class="card-title">Card Title</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div><hr>
+            <div class="card-footer" style="text-align: center;">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2023/10/17/05/25/fox-squirrel-8320423_1280.jpg" alt="Placeholder Image">
+            <div class="card-content">
+            <h2 class="card-title">Card Title</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+         </div>
+         <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2023/05/15/14/02/cat-7995160_1280.jpg" alt="Placeholder Image">
+            <div class="card-content">
+            <h2 class="card-title">Card Title</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+     </div>
+   <!------ card-layout end ----->
+
+   <!-- -------------pricing-table start--------- -->
+   <h2 >Pricing Table:-</h2>
+   <div class="pricing-table">
+    <div class="plan" style=" background: -webkit-radial-gradient(#fff,#000);">
+        <h2>Basic</h2>
+        <p class="price">$159 Reacharge</p>
+        <ul>
+            <li>2GB Data</li>
+            <li>100 Message</li>
+            <li>Unlimited Call</li>
+            <li>28 Days</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+    <div class="plan recommended " style=" background: -webkit-radial-gradient(#fff,#000);">
+        <h2>Pro</h2>
+        <p class="price">$299 Reacharge</p>
+        <ul>
+            <li>10GB Data</li>
+            <li>200 Message</li>
+            <li>Unlimited Call</li>
+            <li>56 Days</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+    <div class="plan" style=" background: -webkit-radial-gradient(#fff,#000);"  >
+        <h2>Premium</h2>
+        <p class="price">$719 Reacharge</p>
+        <ul>
+            <li>Unlimited Data</li>
+            <li>Unlimited Message</li>
+            <li>Unlimited Call</li>
+            <li>84 Days</li>
+        </ul>
+        <a href="# " class="btn">Choose Plan</a>
+    </div>
+</div>
+   <!-- -------------pricing-table end--------- -->
+
+
+<div class="row2">
+    <div class="col1">
+        <figure><img src="https://cdn.pixabay.com/photo/2023/05/23/07/05/royal-gramma-basslet-8012082_1280.jpg" alt="" width="400px" height="400px"></figure>
+    </div>
+    <div class="col2">
+        <video controls loop height="400px" width="400px">
+            <source src="./WhatsApp Video 2024-04-29 at 09.44.30_165fe87d.mp4" type="video/mp4">
+           </video>
+    </div>
+</div>
+
+  <!-- --------------Image Map---------- -->
+
+  <div class="map">
+    
+    <div style="margin-left: 37px;"> 
+        
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d132749.41840639498!2d83.31111624312231!3d26.763970676938328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991446a0c332489%3A0x1ff3f97fdcc6bfa2!2sGorakhpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1713355149350!5m2!1sen!2sin" width="400px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+  </div>
+
+
+  <!-- -------------------------SurName------ -->
+  
+<div class="surname" >
+    <div title="Play the Song"> 
+        <audio  controls loop>
+            <source src="./Tu-Jo-Mileya_320(PaglaSongs).mp3" type="audio/mpeg"> 
+        </audio>
+    </div>
+    <form>
+        <label for="surnameField">Surname:</label>
+        <input type="checkbox" id="surnameField">
+        <input type="text" class="surnameInput" placeholder="Surname">
+    </form>
+    
+</div> 
+
+ <!-- Form Start -- -->
+
+ <div class="container3" id="contact">
+    <h2 style="color:darkslateblue;">Sample Form</h2>
+    <form action="https://formspree.io/f/mpzvaelj"
+    method="POST">
+        Name: <input type="text" name="name" placeholder="Name" required><br><br>
+        Email: <input type="email" name="email" placeholder="Email" required><br><br>
+        Password: <input type="password" name="password" required><br><br>
+        message: <br> <textarea name="" id="" cols="20" rows="3"></textarea><br><br>
+        Range: 1<input type="range" name="range" min="1" max="10" value="1">10
+        <br><br>
+        Date: <input type="date" name="date"><br><br>
+        Time: <input type="time" name="time"><br><br>
+        Color: <input type="color" name="color"><br><br>
+        <label >One</label>
+        <input type="checkbox" checked="checked">
+        <label >two</label>
+        <input type="checkbox" checked="checked">
+        <label >three</label>
+        <input type="checkbox" checked="checked">
+        <label >four</label>
+        <input type="checkbox" checked="checked">
+        
+        What is your core area: 
+        <input type="radio" name="corearea">writter
+        <input type="radio"  name="corearea">developer
+        <input type="radio"  name="corearea">actore
+        <input type="radio"  name="corearea">marketting
+        <input type="radio">other <input type="text"><br>
+        Which Clients do You serve? <br>
+        <input type="checkbox" value="platform1">Foreign
+        <input type="checkbox"  value="platform2">Local
+        <br>
+        What kind of traning are you interested(if required): <br>
+        <select>
+            <option>remote training</option>
+            <option>at office</option>
+            <option>home training</option>
+            <option>other</option>
+        </select><br><br>
+        Are You interested <br>
+        <label class="switch"> 
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label><br><br>
+        
+        <button type="submit" value="Submit this form">Submit</button>
+        
+        <input type="reset" reset>
+        
+    </form>
+
+    
+</div>
+   
+<!-- form end -->
+
+<marquee behavior="slite" direction="left">Thank for Watching my Project...</marquee>
+
+<footer>
+    <div class="icon">
+        <a href="#" target="_blank"><box-icon type='logo' name='github' color="#fff"></box-icon></a>
+        <a href="https://www.google.co.uk/" target="_blank"><box-icon type='logo' name='google' color="#fff"></box-icon > </a>
+        <a href="#" target="_blank"><box-icon type='logo' name='instagram-alt' color="#fff"></box-icon></a>
+        <a href="#" target="_blank"><box-icon type='logo' name='whatsapp' color="#fff"></box-icon></a>  
+    </div> 
+    <p>&copy; 2024 Simple Website. Created by Sumit.</p> 
+
+</footer>
+
+    <script src="./first.js" ></script>
+    
+</body>
+</html>
